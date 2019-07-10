@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3d-wI-cSr" customClass="OpenGLView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="545"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHp-P7-R4D">
+                                <rect key="frame" x="0.0" y="565" width="375" height="102"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0tm-iV-4xK">
+                                        <rect key="frame" x="20" y="52" width="335" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ofd-ms-z8H"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="1"/>
+                                            <segment title="2"/>
+                                            <segment title="3"/>
+                                            <segment title="4"/>
+                                            <segment title="5"/>
+                                            <segment title="6"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentSelectionChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="aAk-df-MYn"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94321652336080064" green="1" blue="0.98173333444960709" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="pVc-qq-8RA"/>
+                                    <constraint firstAttribute="trailing" secondItem="0tm-iV-4xK" secondAttribute="trailing" constant="20" id="q2c-27-0uj"/>
+                                    <constraint firstAttribute="bottom" secondItem="0tm-iV-4xK" secondAttribute="bottom" constant="20" id="wP7-Eb-cz5"/>
+                                    <constraint firstItem="0tm-iV-4xK" firstAttribute="leading" secondItem="EHp-P7-R4D" secondAttribute="leading" constant="20" id="yDo-y1-dkK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EHp-P7-R4D" secondAttribute="trailing" id="8QG-rD-Akf"/>
+                            <constraint firstAttribute="bottom" secondItem="EHp-P7-R4D" secondAttribute="bottom" id="8Tt-Hh-lV7"/>
+                            <constraint firstItem="EHp-P7-R4D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JpC-0K-rbQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p3d-wI-cSr" secondAttribute="bottom" constant="102" id="Xvo-5W-Wks"/>
+                            <constraint firstItem="p3d-wI-cSr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fIJ-GT-ydv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p3d-wI-cSr" secondAttribute="trailing" id="tdX-Kq-KZT"/>
+                            <constraint firstItem="p3d-wI-cSr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yEN-78-53J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="openGLView" destination="p3d-wI-cSr" id="4bb-eL-lRv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="110.19490254872565"/>
+        </scene>
+    </scenes>
+</document>
