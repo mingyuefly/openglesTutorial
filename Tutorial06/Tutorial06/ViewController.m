@@ -4,7 +4,7 @@
 //
 //  Created by Gguomingyue on 2017/11/30.
 //  Copyright © 2017年 Gguomingyue. All rights reserved.
-//
+//  https://www.cnblogs.com/kesalin/archive/2012/12/20/vbo.html
 
 #import "ViewController.h"
 

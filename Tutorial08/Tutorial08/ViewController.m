@@ -4,7 +4,7 @@
 //
 //  Created by Gguomingyue on 2018/5/30.
 //  Copyright © 2018年 Gmingyue. All rights reserved.
-//
+// https://www.cnblogs.com/kesalin/archive/2013/01/11/PerPixelLight-Catoon.html
 
 #import "ViewController.h"
 #import "OpenGLView.h"

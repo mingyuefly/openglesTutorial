@@ -23,6 +23,7 @@
 @implementation OpenGLESView
 
 + (Class)layerClass {
+    // 只有 [CAEAGLLayer class] 类型的 layer 才支持在其上描绘 OpenGL 内容。
     return [CAEAGLLayer class];
 }
 

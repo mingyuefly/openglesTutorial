@@ -4,7 +4,7 @@
 //
 //  Created by Gguomingyue on 2017/11/23.
 //  Copyright © 2017年 guomingyue. All rights reserved.
-//
+//  https://www.cnblogs.com/kesalin/archive/2012/12/06/3D_math.html
 
 #import "ViewController.h"
 

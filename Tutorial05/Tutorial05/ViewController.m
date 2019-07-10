@@ -4,7 +4,7 @@
 //
 //  Created by Gguomingyue on 2017/11/28.
 //  Copyright © 2017年 guomingyue. All rights reserved.
-//
+//  https://www.cnblogs.com/kesalin/archive/2012/12/11/transform_color.html
 
 #import "ViewController.h"
 
